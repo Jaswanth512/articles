@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Piedra&display=swap');
+.main-header
+{
+	line-height: 70px;
+	border-bottom: 1px black solid;
+	background-image: linear-gradient(to right,black,#042331);
+	position: fixed;
+	width: 100%;
+	font-family:"Piedra",cursive;
+	font-size: 35px;
+	color: white;
+	user-select: none;
+	padding-left: 30px;
+	opacity: 1;
+}
+article
+{
+	max-width: 30%;
+	display: inline-block;
+	border: 1px black solid;
+	box-shadow: 4px 4px 15px red;
+	transition: box-shadow 200ms,transform 500ms;
+	padding: 10px; 
+	margin-top: 30px;
+	cursor:pointer;
+	justify-content: space-around;
+}
+
+*
+{
+	margin:0;
+	padding:0; 
+}
+
+.pics
+{
+	width: 100%;
+	height: 200px;
+	background-size: cover !important;
+	background-position: center !important;
+}
+
+.my-input
+{
+	margin-top:80px;
+	border:	1px transparent;
+	height: 30px;
+	width: 95%;
+	font-size: 25px;
+	border-top-right-radius:25px;
+	border-bottom-left-radius: 25px;
+	padding-left: 20px;
+}
+.my-input:focus
+{
+	border: 1px transparent;
+	background-image: linear-gradient(to right,red,black);
+}
+.top-stories
+{
+	width: 1000px;
+	margin:auto; 
+}
+
+article:hover
+{
+	transform: scale(1.1,1.1);
+	box-shadow: 4px 4px 20px blue;
+	color: white;
+	background: black;
+}
+article:active
+{
+	opacity: .5;
+}
+article p
+{
+	overflow: hidden;
+	text-overflow:ellipsis; 
+}
+article h3
+{
+	font-family:"Permanent Marker"; 
+}
+
+.foot
+{	text-align: center;
+	margin-top: 40px;
+	font-size: 20px;
+	text-shadow: 4px 4px 8px blue; 
+}
+.markins
+{
+	text-align: center;
+	vertical-align: bottom; 
+	margin-top: 20px;
+	background:gray;
+	width:100%;
+	height: 50px;
+	bottom:0px;
+}
+
+.pagenation
+{	
+	padding-top: 15px;
+	display: inline-block;
+	text-align: center;
+}
+.pagenation a
+{
+	font-size: 20px;
+	float: left;
+	text-decoration: none;
+	color: black;
+	padding: 4px 16px;
+}
+.pagenation .active
+{
+	background: green;
+	color: white;
+
+}
+.pagenation a:hover:not(.active)
+{
+	background-color: #042331;
+	color: white;
+}
